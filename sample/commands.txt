@@ -1,0 +1,29 @@
+New-Item -ItemType Directory -Force -Path ".github\workflows"
+New-Item -ItemType File -Force -Path ".github\workflows\playwright.yml"
+python -m pip install pytest-html
+Start-Process .\report.html
+
+#GitHub repository has already README 
+
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git remote -v 
+git pull origin main --allow-unrelated-histories
+press Esc
+Type it as  :wq
+Press Enter
+git push -u origin main
+
+#Empty GitHub repository
+git init
+git status
+git add .
+git commit -m "Initialised"
+git commit -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git remote -v
+git push -u origin main
