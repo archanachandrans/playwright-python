@@ -1,0 +1,5 @@
+This is a sample document
+For python playwright
+Writing to a new document
+Then reading it
+Finally append a new line
